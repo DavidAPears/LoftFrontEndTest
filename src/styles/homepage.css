@@ -1,0 +1,25 @@
+/* CSS FOR THE HOMEPAGE SECTION */
+
+.homepage {
+  height:           70vh;
+  background:       url("../images/github-bg.svg") no-repeat center center fixed;;
+  background-size:  cover;
+  background-color: #2b3137
+}
+
+.title {
+  text-align:       center;
+  padding-top:      18vh;
+  font-family:      'Advent Pro', sans-serif;
+  font-weight:      lighter;
+  font-size:        7.5vh;
+  color:            white;
+}
+
+.tagline {
+  text-align:       center;
+  font-family:      'Advent Pro', sans-serif;
+  font-weight:      lighter;
+  font-size:        3.75vh;
+  color:            white;
+}

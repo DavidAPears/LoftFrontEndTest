@@ -1,0 +1,164 @@
+/* CSS FOR THE RESULTS SECTION */
+
+.results-page {
+ padding-top:        5vh;
+ align-items:        center;
+ justify-content:    center;
+ width:              100vw;
+ background-color:   #fafafa;
+ padding-bottom:     20vh;
+}
+
+.result-intro{
+ font-family:        'Advent Pro', sans-serif;
+ font-weight:        lighter;
+ font-size:          3vh;
+ color:  	           #808080;
+ padding-top:        5vh;
+ text-align:         center
+}
+
+.result-name{
+ text-align:         center;
+ font-family:        'Advent Pro', sans-serif;
+ font-size:          5vh;
+ color:              black;
+ margin-bottom:      4vh
+}
+
+.results-section {
+ width:              85vw;
+ text-align:         center;
+ font-family:        'Advent Pro', sans-serif;
+ font-size:          2.5vh;
+ color:              #696969;
+ background-color:   white;
+ flex-direction:     column;
+ flex:               auto;
+ border:             5px solid white;
+ border-width:       thin;
+ margin:             3vh;
+ box-shadow:         0 4px 8px 0 rgba(0,0,0,0.12),
+                     0 2px 4px 0 rgba(0,0,0,0.08)
+}
+
+.main-results-section{
+ display:            flex;
+ flex-flow:          column;
+ align-items:        center;
+ justify-content:    center
+}
+
+.horizontal-results-section{
+ display:            flex;
+ flex-flow:          row wrap;
+ align-items:        center;
+ justify-content:    center
+}
+
+.avatar {
+ display:            flex;
+ flex-flow:          row wrap;
+ text-align:         right;
+ flex-direction:     row
+}
+
+.results-section2 {
+ width:              40vw;
+ text-align:         center;
+ font-family:        'Advent Pro', sans-serif;
+ font-size:          2.5vh;
+ color:              #696969;
+ background-color:   white;
+ flex-direction:     row;
+ border:             5px solid white;
+ border-width:       thin;
+ margin:             3vh;
+ box-shadow:         0 4px 8px 0 rgba(0,0,0,0.12),
+                     0 2px 4px 0 rgba(0,0,0,0.08)
+}
+
+.results-section3 {
+ width:              40vw;
+ text-align:         center;
+ font-family:        'Advent Pro', sans-serif;
+ font-size:          2.5vh;
+ color:              #696969;
+ background-color:   white;
+ flex-direction:     row;
+ border:             5px solid white;
+ border-width:       thin;
+ margin:             3vh;
+ box-shadow:         0 4px 8px 0 rgba(0,0,0,0.12),
+                     0 2px 4px 0 rgba(0,0,0,0.08)
+}
+
+.result-section-title {
+ text-align:         left;
+ font-family:        'Advent Pro', sans-serif;
+ font-weight:        bold;
+ font-size:          3vh;
+ color:              #696969
+}
+
+.result-box-1 {
+ display:           flex;
+ flex-flow:         row wrap;
+ text-align:        center;
+ border:            5px solid white;
+ border-width:      thin;
+ border-radius:     20px
+}
+
+.result-box-1  > * {
+ padding:           1px;
+ flex:              1 100%
+}
+
+.result-box-2 {
+ display:           flex;
+ flex-flow:         row wrap;
+ text-align:        center;
+ border:            5px solid white;
+ border-width:      thin;
+ border-radius:     20px;
+ margin:            50px
+}
+
+.result-box-2  > * {
+ padding:           1px;
+ flex:              1 100%
+}
+
+.result-box-3 {
+ display:           flex;
+ flex-flow:         row wrap;
+ text-align:        center;
+ border:            5px solid white;
+ border-width:      thin;
+ border-radius:     20px;
+ margin:            50px
+}
+
+.result-box-3  > * {
+ padding:           1px;
+ flex:              1 100%;
+}
+
+.main {
+ text-align:        left;
+ flex-direction:    row;
+ padding:           none;
+}
+
+.main1 {
+ text-align:        left;
+ flex-direction:    row;
+ padding:           none;
+ font-weight:       bolder;
+}
+
+@media all and (min-width: 800px) {
+  .main  { flex: 3 0px; }
+  .main  { order: 2; }
+}
