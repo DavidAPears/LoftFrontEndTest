@@ -149,16 +149,37 @@
  text-align:        left;
  flex-direction:    row;
  padding:           none;
+ font-weight:       bolder;
 }
 
 .main1 {
  text-align:        left;
  flex-direction:    row;
  padding:           none;
+ font-weight:       lighter;
+}
+
+.main2 {
+ text-align:        left;
+ flex-direction:    row;
+ padding:           none;
  font-weight:       bolder;
+}
+
+.main3 {
+ text-align:        left;
+ flex-direction:    row;
+ padding:           none;
+ font-weight:       lighter;
 }
 
 @media all and (min-width: 800px) {
   .main  { flex: 3 0px; }
+  .main1 { flex: 3 0px; }
+  .main2 { flex: 3 0px; }
+  .main3 { flex: 3 0px; }
   .main  { order: 2; }
+  .main1  { order: 2; }
+  .main2  { order: 2; }
+  .main3 { order: 2; }
 }

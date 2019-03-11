@@ -1,7 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react';
-import moment from 'moment';
 import Background from './images/github-bg.svg';
+import MediaQuery from 'react-responsive';
 import axios from 'axios';
+import moment from 'moment';
 import './styles/header.css';
 import './styles/homepage.css';
 import './styles/searchbar.css';
@@ -142,18 +143,18 @@ return (
                   <p>URL          </p>
                   <p>Language     </p>
                 </div>
-              <div className="main">
+              <div className="main1">
                   <p> {repoDetail.data.full_name  ? repoDetail.data.full_name   : "No Name Provided"}</p>
                   <p> {repoDetail.data.description? repoDetail.data.description : "No Description Available"}</p>
                   <a href={repoDetail.data.url}>{repoDetail.data.url}</a>
                   <p> {repoDetail.data.language   ? repoDetail.data.language    : "Not Specified"}</p>
                 </div>
-              <div className="main">
+              <div className="main2">
                   <p>Private     </p>
                   <p>Created At  </p>
                   <p>Updated At  </p>
                 </div>
-              <div className="main">
+              <div className="main3">
                   <p> {repoDetail.data.private    !=null ? `${repoDetail.data.private}`: "Privacy Info Unavailable"} </p>
                   <p> {repoDetail.data.created_at ? moment(`${repoDetail.data.created_at}`,'YYYY-MM-DD').format('L') : "Created Date Data Unavailable"}</p>
                   <p> {repoDetail.data.updated_at ? moment(`${repoDetail.data.updated_at}`,'YYYY-MM-DD').format(`L`) : "Updated Date Data Unavailable"}</p>
@@ -174,7 +175,7 @@ return (
               <p><img src={require("./images/githubicons/repo-forked.svg")} /> Forked By  </p>
               <p><img src={require("./images/githubicons/law.svg")}         /> License    </p>
             </div>
-            <div className="main">
+            <div className="main1">
               <p> {repoDetail.data.stargazers_count ? `${repoDetail.data.stargazers_count}` : "No Count Available"}</p>
               <p> {repoDetail.data.watchers_count   ? `${repoDetail.data.watchers_count}`   : "No Count Available"}</p>
               <p> {repoDetail.data.forks_count      ? `${repoDetail.data.forks_count}`      : "Forking Info Unavailable"}</p>
@@ -193,7 +194,7 @@ return (
               <p>Owner ID   </p>
               <p>Owner Type </p>
             </div>
-            <div className="main">
+            <div className="main1">
               <p> {repoDetail.data.owner ? `${repoDetail.data.owner.login}` : "None Available"}</p>
               <p> {repoDetail.data.owner ? `${repoDetail.data.owner.id}`    : "None Available"}</p>
               <p> {repoDetail.data.owner ? `${repoDetail.data.owner.type}`  : "None Available"}</p>
