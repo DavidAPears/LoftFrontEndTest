@@ -150,6 +150,7 @@
  flex-direction:    row;
  padding:           none;
  font-weight:       bolder;
+ width:             8vw;
 }
 
 .main1 {
@@ -157,6 +158,7 @@
  flex-direction:    row;
  padding:           none;
  font-weight:       lighter;
+ width:             8vw;
 }
 
 .main2 {
@@ -164,6 +166,7 @@
  flex-direction:    row;
  padding:           none;
  font-weight:       bolder;
+ width:             8vw;
 }
 
 .main3 {
@@ -171,15 +174,16 @@
  flex-direction:    row;
  padding:           none;
  font-weight:       lighter;
+ width:             8vw;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 100vw) {
   .main  { flex: 3 0px; }
   .main1 { flex: 3 0px; }
   .main2 { flex: 3 0px; }
   .main3 { flex: 3 0px; }
   .main  { order: 2; }
-  .main1  { order: 2; }
-  .main2  { order: 2; }
+  .main1 { order: 2; }
+  .main2 { order: 2; }
   .main3 { order: 2; }
 }
