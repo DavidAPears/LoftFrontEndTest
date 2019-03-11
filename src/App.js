@@ -8,7 +8,6 @@ import './styles/homepage.css';
 import './styles/searchbar.css';
 import './styles/results.css';
 
-
 // Adds background image to landing page:
   var homepageStyle = {
     backgroundImage: "url(" + Background + ")",
