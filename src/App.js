@@ -1,4 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react';
+import moment from 'moment';
 import Background from './images/github-bg.svg';
 import axios from 'axios';
 import './styles/header.css';
@@ -15,10 +16,11 @@ import './styles/results.css';
 // React Hooks to set state
 export default function App(){
   const [result, setResults] = useState([])
-  const [query, setQuery] = useState([null])
+  const [query, setQuery] = useState([null]);
   const [error, setError] = useState(null);
   const [repoDetail, setRepoDetail] = useState(null);
   const searchInputRef = useRef();
+
 
   useEffect( () => {
     getResults();
@@ -153,8 +155,8 @@ return (
                 </div>
               <div className="main">
                   <p> {repoDetail.data.private    !=null ? `${repoDetail.data.private}`: "Privacy Info Unavailable"} </p>
-                  <p> {repoDetail.data.created_at ? `${repoDetail.data.created_at}`    : "Created Date Data Unavailable"}</p>
-                  <p> {repoDetail.data.updated_at ? `${repoDetail.data.updated_at}`    : "Updated Date Data Unavailable"}</p>
+                  <p> {repoDetail.data.created_at ? moment(`${repoDetail.data.created_at}`,'YYYY-MM-DD').format('L') : "Created Date Data Unavailable"}</p>
+                  <p> {repoDetail.data.updated_at ? moment(`${repoDetail.data.updated_at}`,'YYYY-MM-DD').format(`L`) : "Updated Date Data Unavailable"}</p>
                 </div>
               </div>
             </div>
