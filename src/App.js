@@ -99,7 +99,7 @@ return (
           type="text"
           value={query}
           ref={searchInputRef}
-          placeholder="Search Github Repos"
+          placeholder=" Search Github Repos"
           onChange={event => setQuery(event.target.value)}
           className="searchbar"
         />
