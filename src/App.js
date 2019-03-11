@@ -59,6 +59,7 @@ export default function App(){
 // Ensures when 'Clear' button is pressed focus/cursor returns to begining of textinput (I.E searchbar)
   const handleClearSearch = () =>{
     setQuery("");
+    setError("");
       setRepoDetail (null);
       searchInputRef.current.focus();
     };
